@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[isReady()]]></content>
+    <tabTrigger>isReady()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>StateMachine</description>
+</snippet>

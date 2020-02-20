@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[enterState_(${1:event})]]></content>
+    <tabTrigger>enterState_(event)</tabTrigger>
+    <scope>source.lua</scope>
+    <description>StateMachine</description>
+</snippet>

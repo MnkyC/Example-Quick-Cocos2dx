@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[canDoEvent(${1:eventName})]]></content>
+    <tabTrigger>canDoEvent(eventName)</tabTrigger>
+    <scope>source.lua</scope>
+    <description>StateMachine</description>
+</snippet>

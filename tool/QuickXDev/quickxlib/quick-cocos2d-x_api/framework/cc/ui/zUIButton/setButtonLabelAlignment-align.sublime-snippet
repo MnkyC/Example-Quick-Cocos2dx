@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[setButtonLabelAlignment(${1:align})]]></content>
+    <tabTrigger>setButtonLabelAlignment(align)</tabTrigger>
+    <scope>source.lua</scope>
+    <description>UIButton</description>
+</snippet>

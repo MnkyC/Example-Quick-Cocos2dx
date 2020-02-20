@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[isButtonEnabled()]]></content>
+    <tabTrigger>isButtonEnabled()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>UIButton</description>
+</snippet>
