@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[cc.EventProxy.new(${1:eventDispatcher}, ${2:view})]]></content>
+    <tabTrigger>EventProxy.new(eventDispatcher, view)</tabTrigger>
+    <scope>source.lua</scope>
+    <description>EventProxy</description>
+</snippet>

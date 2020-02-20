@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[setupState(${1:cfg})]]></content>
+    <tabTrigger>setupState(cfg)</tabTrigger>
+    <scope>source.lua</scope>
+    <description>StateMachine</description>
+</snippet>

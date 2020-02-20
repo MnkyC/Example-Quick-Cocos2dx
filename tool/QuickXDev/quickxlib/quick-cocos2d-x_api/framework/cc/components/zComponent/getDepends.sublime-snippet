@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[getDepends()]]></content>
+    <tabTrigger>getDepends()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Component</description>
+</snippet>

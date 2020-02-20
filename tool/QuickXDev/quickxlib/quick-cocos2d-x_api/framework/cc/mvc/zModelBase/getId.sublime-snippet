@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[getId()]]></content>
+    <tabTrigger>getId()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>ModelBase</description>
+</snippet>

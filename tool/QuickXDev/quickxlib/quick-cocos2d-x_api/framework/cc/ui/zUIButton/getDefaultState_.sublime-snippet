@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[getDefaultState_()]]></content>
+    <tabTrigger>getDefaultState_()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>UIButton</description>
+</snippet>

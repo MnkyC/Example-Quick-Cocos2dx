@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[unbind_()]]></content>
+    <tabTrigger>unbind_()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>Component</description>
+</snippet>

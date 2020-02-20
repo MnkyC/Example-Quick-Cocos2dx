@@ -1,0 +1,6 @@
+<snippet>
+    <content><![CDATA[cc.ui.UIGroup.new()]]></content>
+    <tabTrigger>UIGroup.new()</tabTrigger>
+    <scope>source.lua</scope>
+    <description>UIGroup</description>
+</snippet>
