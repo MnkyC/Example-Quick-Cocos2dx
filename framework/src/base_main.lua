@@ -1,8 +1,12 @@
-package.path = package.path .. ";src/"
+--package.path = package.path .. ";src/"
+
+require("base_config")
 require("config")
 
 require("cocos.init")
 require("framework.init")
+
+require("platform.init")
 
 
 function __G__TRACKBACK__(errorMessage)
@@ -14,8 +18,8 @@ end
 
 cc.FileUtils:getInstance():setPopupNotify(false)
 
-local function startGame()
-	require("app.MnkyCApp").new():run()
+function startGame()
+	xpcall(function ()
+		require("app.MnkyCApp").new():run()
+	end, __G__TRACKBACK__)
 end
-
-xpcall(startGame, __G__TRACKBACK__)
