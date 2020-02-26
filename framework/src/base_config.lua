@@ -23,3 +23,6 @@ CONFIG_SCREEN_HEIGHT = 1280
 
 -- auto scale mode
 CONFIG_SCREEN_AUTOSCALE = "FIXED_HEIGHT"
+
+--report url
+REPORT_URL = ""

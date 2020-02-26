@@ -6,6 +6,8 @@ require("config")
 require("cocos.init")
 require("framework.init")
 
+require("app.init")
+require("lib.init")
 require("platform.init")
 
 
@@ -14,6 +16,7 @@ function __G__TRACKBACK__(errorMessage)
     print("LUA ERROR: " .. tostring(errorMessage) .. "\n")
     print(debug.traceback("", 2))
     print("----------------------------------------")
+    HTTP_ERROR(tostring(errorMessage) .. debug.traceback("", 2))
 end
 
 cc.FileUtils:getInstance():setPopupNotify(false)
