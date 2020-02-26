@@ -12,5 +12,10 @@ config.lua
 main.lua
 	工程入口，启动时首先执行该文件
 --------------------------------------------
+lib
+	modules模块
+		report, 上报日志
+	util常用
+		functions.lua, 常用函数
 platform
 	平台相关的功能，平台有android, iOS, desktop
