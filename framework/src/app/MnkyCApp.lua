@@ -1,6 +1,8 @@
 
 local AudioManager = require("lib.modules.audio.AudioManager")
 local LocalizedStrings = require("lib.modules.localized.LocalizedStrings")
+local LocalStorage = require("lib.modules.storage.LocalStorage")
+local ChatManager = require("lib.modules.chat.ChatManager")
 
 
 local MnkyCApp = class("MnkyCApp", cc.mvc.AppBase)
@@ -16,6 +18,8 @@ end
 function MnkyCApp:init()
 	self.LocalizedStrings = LocalizedStrings:getInstance()
 	self.AudioManager = AudioManager:getInstance()
+	self.LocalStorage = LocalStorage:getInstance()
+	self.ChatManager = ChatManager:getInstance()
 
 end
 

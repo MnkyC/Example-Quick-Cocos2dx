@@ -16,9 +16,11 @@ lib
 	modules模块
 		aniamtion, 动作管理
 		audio, 声音管理
+		chat, 聊天管理
 		localized, 语言本地化
 		report, 上报日志
-	util常用
+		storage, 本地存储
+	utils常用
 		functions.lua, 常用函数
 platform
 	平台相关的功能，平台有android, iOS, desktop
