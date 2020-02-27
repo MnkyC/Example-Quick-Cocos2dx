@@ -14,10 +14,9 @@ main.lua
 --------------------------------------------
 lib
 	modules模块
-		aniamtion
-			AnimationBase, 通用的基础动画
-			AnimationManager, 动作管理
-		localized, 本地化
+		aniamtion, 动作管理
+		audio, 声音管理
+		localized, 语言本地化
 		report, 上报日志
 	util常用
 		functions.lua, 常用函数
