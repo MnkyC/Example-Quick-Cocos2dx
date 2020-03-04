@@ -8,8 +8,8 @@ require("framework.init")
 
 require("app.init")
 require("lib.init")
-require("platforms.init")
-require("components.init")
+require("platform.init")
+require("component.init")
 
 
 function __G__TRACKBACK__(errorMessage)
