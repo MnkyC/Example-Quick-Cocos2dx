@@ -1,4 +1,3 @@
-
 local WebImage = require("lib.modules.webImage.WebImage")
 local CommonWord = import(".CommonWord")
 local SensitiveWord = import(".SensitiveWord")

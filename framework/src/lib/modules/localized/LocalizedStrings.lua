@@ -1,12 +1,13 @@
-
 local LocalizedStrings = class("LocalizedStrings")
 
+local __instance
+
 function LocalizedStrings:getInstance()
-	if self.__instance == nil then
-		self.__instance = LocalizedStrings.new()
+	if __instance == nil then
+		__instance = LocalizedStrings.new()
 	end
 
-	return self.__instance
+	return __instance
 end
 
 function LocalizedStrings:ctor()

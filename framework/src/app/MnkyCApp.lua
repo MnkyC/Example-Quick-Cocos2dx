@@ -3,7 +3,9 @@ local AudioManager = require("lib.modules.audio.AudioManager")
 local LocalStorage = require("lib.modules.storage.LocalStorage")
 local ChatManager = require("lib.modules.chat.ChatManager")
 local RecordManager = require("lib.modules.record.RecordManager")
-local NetEngine = require("net.NetEngine")
+local AnimationManager = require("lib.modules.animation.AnimationManager")
+local SocketTCPEngine = require("net.SocketTCPEngine")
+local HTTPEngine = require("net.HTTPEngine")
 
 
 local MnkyCApp = class("MnkyCApp", cc.mvc.AppBase)
@@ -24,7 +26,9 @@ function MnkyCApp:init()
 	self.LocalStorage = LocalStorage:getInstance()
 	self.ChatManager = ChatManager:getInstance()
 	self.RecordManager = RecordManager:getInstance()
-	self.NetEngine = NetEngine:getInstance()
+	self.AnimationManager = AnimationManager:getInstance()
+	self.SocketTCPEngine = SocketTCPEngine:getInstance()
+	self.HTTPEngine = HTTPEngine:getInstance()
 
 end
 

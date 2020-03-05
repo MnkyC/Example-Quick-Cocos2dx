@@ -1,4 +1,3 @@
-
 local GameState = require("framework.cc.utils.GameState")
 
 local LocalStorage = class("LocalStorage")

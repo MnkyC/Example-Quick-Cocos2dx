@@ -1,4 +1,3 @@
-
 local url = REPORT_URL
 
 local function report(msg)

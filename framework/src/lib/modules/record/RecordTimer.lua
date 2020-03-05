@@ -1,4 +1,3 @@
-
 local RecordTimer = class("RecordTimer", function ()
 	return display.newNode()
 end)

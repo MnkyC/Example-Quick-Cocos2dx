@@ -1,7 +1,8 @@
+local RecordIOS = class("RecordIOS")
+
 
 local className = "GameRecord"
 
-local RecordIOS = class("RecordIOS")
 
 function RecordIOS:ctor()
 end
