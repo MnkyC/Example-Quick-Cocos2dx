@@ -1,19 +1,20 @@
-
 local AnimationManager = import(".AnimationManager")
 
 local AnimationBase = class("AnimationBase", function ()
 	return display.newNode()
 end)
 
+local __instance
+
 function AnimationBase:ctor()
 end
 
 function AnimationBase:getInstance()
-    if self.__instance == nil then
-        self.__instance = AnimationBase.new()
+    if not __instance then
+        __instance = AnimationBase.new()
     end
 
-    return self.__instance
+    return __instance
 end
 
 return AnimationBase

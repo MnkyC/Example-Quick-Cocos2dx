@@ -1,5 +1,6 @@
-
 local Chatmanager = class("ChatManager")
+
+local __instance
 
 function ChatManager:ctor()
 	self:initData()
@@ -7,11 +8,11 @@ function ChatManager:ctor()
 end
 
 function ChatManager:getInstance()
-	if self.__instance == nil then
-		self.__instance = ChatManager.new()
+	if __instance == nil then
+		__instance = ChatManager.new()
 	end
 
-	return self.__instance
+	return __instance
 end
 
 function ChatManager:initData()

@@ -1,4 +1,3 @@
-
 local WebImage = class("WebImage", function ()
 	return display.newNode()
 end)

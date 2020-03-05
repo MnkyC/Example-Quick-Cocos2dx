@@ -1,7 +1,8 @@
+local RecordAndroid = class("RecordAndroid")
+
 
 local className = "com/mnkyc/quick/game/GameActivity"
 
-local RecordAndroid = class("RecordAndroid")
 
 function RecordAndroid:ctor()
 end
