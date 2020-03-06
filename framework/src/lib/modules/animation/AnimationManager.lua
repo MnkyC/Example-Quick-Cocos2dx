@@ -1,25 +1,21 @@
 local AnimationManager = class("AnimationManager")
 
 
-AnimationManager.STATE_IDLE = 1
-AnimationManager.STATE_BUSY = 2
-
-local __instance
-local __animation_queue
-local __state
+local STATE_IDLE = 1
+local STATE_BUSY = 2
 
 
 function AnimationManager:ctor()
-	__animation_queue = {}
-	__state = AnimationManager.STATE_IDLE
+	self._animation_queue = {}
+	self._state = STATE_IDLE
 end
 
 function AnimationManager:getInstance()
-	if __instance == nil then
-		__instance = AnimationManager.new()
+	if not self._instance then
+		self._instance = AnimationManager.new()
 	end
 
-	return __instance
+	return self._instance
 end
 
 function AnimationManager:enqueueAnimation(animFunc, clearFunc)

@@ -1,16 +1,9 @@
 local LocalizedStrings = class("LocalizedStrings")
 
-local __instance
-
-function LocalizedStrings:getInstance()
-	if __instance == nil then
-		__instance = LocalizedStrings.new()
-	end
-
-	return __instance
+function LocalizedStrings:ctor()
 end
 
-function LocalizedStrings:ctor()
+function LocalizedStrings:getInstance()
 end
 
 -- 获取设备语言
