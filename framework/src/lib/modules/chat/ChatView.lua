@@ -20,8 +20,8 @@ function ChatView:ctor(seatid, content)
 end
 
 function ChatView:initData(seatid, content)
-	self.__seatid = seatid
-	self.__content = content
+	self._seatid = seatid
+	self._content = content
 
 end
 
@@ -30,7 +30,7 @@ function ChatView:initUI()
 end
 
 function ChatView:onRemove()
-	_app.ChatManager:removeChatView(self.__seatid)
+	_app.ChatManager:removeChatView(self._seatid)
 end
 
 return ChatView

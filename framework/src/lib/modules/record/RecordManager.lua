@@ -7,17 +7,17 @@ local RecordManager = class("RecordManager", function()
 end)
 
 function RecordManager:ctor()
-	self.__recording = false
+	self._recording = false
 
 	if device.platform == "ios" then
-		self.__record = RecordIOS.new()
+		self._record = RecordIOS.new()
 	elseif device.platform == "android" then
-		self.__record = RecordAndroid.new()
+		self._record = RecordAndroid.new()
 	else
-		self.__record = RecordIOS.new()
+		self._record = RecordIOS.new()
 	end
 
-	cc.EventProxy.new(self.__record, self)
+	cc.EventProxy.new(self._record, self)
 		:addEventListener("RecordDidStart", handler(self, self.onDidStartRecord))
 		:addEventListener("RecordDidStop", handler(self, self.onDidStopRecord))
 		:addEventListener("RecordDidCancel", handler(self, self.onDidCancelRecord))

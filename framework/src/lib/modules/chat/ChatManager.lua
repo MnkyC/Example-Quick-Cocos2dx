@@ -1,18 +1,11 @@
 local Chatmanager = class("ChatManager")
 
-local __instance
-
 function ChatManager:ctor()
 	self:initData()
 	self:initEvent()
 end
 
 function ChatManager:getInstance()
-	if __instance == nil then
-		__instance = ChatManager.new()
-	end
-
-	return __instance
 end
 
 function ChatManager:initData()
